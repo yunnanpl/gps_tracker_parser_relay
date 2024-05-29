@@ -34,8 +34,10 @@ Basic settings:
 
 Important advanced settings:
 * SLEEP0000 int
-  * int is a value in minutes, between sleep modes
-  * setting this 0, disables sleep and forces kind of WORK mode
+  * int is a value of activity in minutes, after wakeup !!!
+  * that means, for maximal battery/transfer saving, set it to 1
+  * setting this 0, disables sleep and forces kind of WORK mode (so no sleep)
+  * default is 5
 * 8050000 int
   * int is a value in seconds between messages (while key/engine is ON, for car bound devices)
   * some pages recommend not to set it below 10 (even if it should be possible to go to 5)
@@ -47,6 +49,7 @@ Important advanced settings:
 * 6650000xxxx
   * send location at least once a day, on given time
   * xxxx means HHMM (hours and minutes )
+  * INFO this does not seem to work on mine ST-915L
 
 Other functions:
 * RCONF
@@ -55,6 +58,7 @@ Other functions:
   * reset device 
 * 6690000
   * request google maps link
+  * INFO this triggers a wakeup too, after ~1 minute
 * 8960000xxx
   * xxx is a timezone value, for example E00
   * set time zone, by default E00 (east 00)
