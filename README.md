@@ -1,5 +1,35 @@
-# sinotrack_gps_tracking
-Tips and tricks for SinoTrack GPS, to use with OwnTracks and Homeassistant
+# GPS tracker parser/relay
+The idea of this page is to use the cheaper, subscription-free GPS trackers, for variety of solutions and applications.
+
+At the monment the main focus is to use the SinoTrack (https://www.sinotrack.com/) GPS tracker, together with OwnTracks (https://owntracks.org/), with Home Assistant (https://www.home-assistant.io/).
+In the future probably the TK Star will be checked (https://www.tk-star.com/) (when I will own one).
+
+Clearly, as usual, the project should be as simple as possible, and have the least dependencies, etc.
+
+IMPORTANT: Depending on a country, one should think about 4G tracker instead of the 2G only... even if the price is higher, battery last shorter and mobile phone range may be shorter... ;)
+
+# Approach
+## Idea, steps, coarse plan
+ * get a tracker, and working compatible sim card (usually an IoT card)
+ * redirect the messages to my own server, instead the official server
+ * parse the messages and use those for something else (OwnTracks, MQTT, Traccar, whatever)
+   * it seems these trackers use so called h02 format for transmitting messages (see link at the bottom) 
+ * (alternative idea, to pass the packets back to SinoTrack servers, in order to use those as backup
+ * (alternative idea 2, send the current parking position (or positions of the car overall) to google maps)
+
+## Requirements
+ * python
+ * a 24h running computer
+   * static IP is recommended BUT not necessary, as Dynamic DNS domain does very well too !
+ * open port (default 8090, but can be anything)
+ * the magic script :)
+
+## Expected issues
+
+# Instructions
+Tips and tricks for SinoTrack GPS. It may vary depending on the model you get.
+
+The models with L at the end are usually the 4G models (mine are ST-915L and ST-904L).
 
 ## How to setup SinoTrack
 Most important settings are
@@ -62,4 +92,12 @@ Other functions:
 * 8960000xxx
   * xxx is a timezone value, for example E00
   * set time zone, by default E00 (east 00)
+
+
+
+# Other links
+
+ * https://github.com/Junker/h02own
+ * https://github.com/engemamhosain/Sinotrack-gps-device
+ * https://github.com/jonamat/gps-tracker-rebouncer
 
