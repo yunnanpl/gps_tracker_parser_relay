@@ -48,7 +48,7 @@ By tweaking the settings you can get much better battery life with the same func
 
 Basic settings:
 * APN
-  * 8040000 ip/domain
+  * 8030000 ip/domain
 * mode
   * WORK0000
     * active mode, always send with fixed delay even if not active
