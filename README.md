@@ -61,6 +61,10 @@ Basic settings:
   * where the data should be sent
   * NEW DEVICES - device is doing DNS resolving, so it is possible to put a domain name there (also Dynamic DNS !)
   * port can be anything, and default port for sinotrack is 8090
+* 7000000
+  * set SMS mode, only sending sms, no internet tracking
+* 7100000
+  * set GPRS (internet) mode, normal mode for internet tracking
 
 Important advanced settings:
 * SLEEP0000 int
@@ -82,17 +86,26 @@ Important advanced settings:
   * INFO this does not seem to work on mine ST-915L
 
 Other functions:
-* RCONF
-  * get the configuration
-* RESET
-  * reset device 
-* 6690000
-  * request google maps link
-  * INFO this triggers a wakeup too, after ~1 minute
-* 8960000xxx
-  * xxx is a timezone value, for example E00
-  * set time zone, by default E00 (east 00)
+ * RCONF
+   * get the configuration
+ * RESET
+   * reset device 
+ * 6690000
+   * request google maps link
+   * INFO this triggers a wakeup too, after ~1 minute
+ * 8960000xxx
+   * xxx is a timezone value, for example E00
+   * set time zone, by default E00 (east 00)
+ * 6660000
+   * request longitude and latitude
 
+Other unusual functions (maybe from other device versions):
+ * CXZT
+   * get detailed settings
+ * CQ
+   * restart command
+ * FORMAT
+   * reset command
 
 
 # Other links
