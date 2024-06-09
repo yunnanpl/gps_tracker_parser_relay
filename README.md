@@ -84,6 +84,7 @@ Important advanced settings:
   * send location at least once a day, on given time
   * xxxx means HHMM (hours and minutes )
   * INFO this does not seem to work on mine ST-915L
+  * INFO some pages write it does not work while tracker is in sleep mode (most of the time ;)
 
 Other functions:
  * RCONF
@@ -103,10 +104,11 @@ Other unusual functions (maybe from other device versions):
  * CXZT
    * get detailed settings
  * CQ
-   * restart command
+   * alternative restart command
  * FORMAT
-   * reset command
-
+   * alternative reset command
+ * CQGPS
+   * reset GPS only
 
 # Other links
 
