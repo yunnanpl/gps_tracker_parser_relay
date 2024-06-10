@@ -110,6 +110,12 @@ Other unusual functions (maybe from other device versions):
  * CQGPS
    * reset GPS only
 
+Other strange functions
+ * STATIC,0000,3600
+ * FREQ,0000,3600
+ * APN123456 APNNAME
+
+
 # Other links
 
  * https://github.com/Junker/h02own
