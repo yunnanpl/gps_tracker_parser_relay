@@ -111,6 +111,10 @@ Other unusual functions (maybe from other device versions):
    * reset GPS only
 
 Other strange functions
+ * no response
+   * 8060000
+ * invalid command
+   * 8050000 (without additional variable)
  * STATIC,0000,3600
  * FREQ,0000,3600
  * APN123456 APNNAME
