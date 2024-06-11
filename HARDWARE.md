@@ -29,7 +29,7 @@ Dividing it into separate pieces, we get the following:
 This is a response from CXZT SMS command. Strangely, it is an SMS with line breaks.
 ```
 ST915(70SALASCD)_V_1.0 2023/08/23
-ID:7028917064
+ID:xxxxxxxxxx
 IP:my.server.net 8090
 UT:30,600,1800
 BAT:92
