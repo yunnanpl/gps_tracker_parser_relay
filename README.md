@@ -125,4 +125,5 @@ Other strange functions
  * https://github.com/Junker/h02own
  * https://github.com/engemamhosain/Sinotrack-gps-device
  * https://github.com/jonamat/gps-tracker-rebouncer
+ * https://wiki.sciuro.org/Howto/SinoTrack
 
