@@ -47,8 +47,8 @@ You can find it in multiple sources in internet (and here https://forocoches.com
 By tweaking the settings you can get much better battery life with the same functionality.
 
 Basic settings:
-* APN
-  * 8030000 ip/domain
+* 8030000 ip/domain
+  * set the APN of the internet provider
 * mode
   * WORK0000
     * active mode, always send with fixed delay even if not active
