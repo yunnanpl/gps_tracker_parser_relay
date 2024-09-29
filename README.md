@@ -76,10 +76,12 @@ Important advanced settings:
   * int is a value in seconds between messages (while key/engine is ON, for car bound devices)
   * some pages recommend not to set it below 10 (even if it should be possible to go to 5)
   * default 20
+  * (this changes the main timer for ST-904, the "GPRS UPLOAD TIME")
 * 8090000 int
   * int is a value in seconds between messages (while key/engine is OFF, for car bound devices)
   * some pages recommend not to set it below 10 (even if it should be possible to go to 5)
   * default 300
+  * (this seems to have no influence on the small ST-904)
 * 6650000xxxx
   * send location at least once a day, on given time
   * xxxx means HHMM (hours and minutes )
